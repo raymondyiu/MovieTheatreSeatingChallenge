@@ -1,5 +1,7 @@
 package org.example;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
 import com.opencsv.CSVReader;
 import com.opencsv.CSVReaderBuilder;
 
@@ -8,6 +10,10 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.io.FileReader;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
 
 public class Theatre implements IVenue {
     private String name;
@@ -20,12 +26,18 @@ public class Theatre implements IVenue {
         return name;
     }
     public void readJson(String filename) {
+        JSONParser parser = new JSONParser();
         try {
             Path path = Paths.get(
                     ClassLoader.getSystemResource(filename).toURI());
-            Reader reader = Files.newBufferedReader(path);
-            CSVReader csvReader = new CSVReaderBuilder(reader).build();
-            allData = csvReader.readAll();
+            FileReader reader = new FileReader(path);
+
+            Gson gson = new Gson();
+            JsonObject data = gson.fromJson(reader, JsonObject.class);
+
+            name = JsonObject.get("name").getAsString();
+
+
 
         } catch (Exception e){
             e.printStackTrace();
