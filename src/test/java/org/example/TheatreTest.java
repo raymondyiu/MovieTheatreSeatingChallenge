@@ -12,6 +12,9 @@ class TheatreTest {
 
     @Test
     void readJson() {
+        Theatre theatre = new Theatre();
+        theatre.readJson("Theatre.json");
+        assertEquals("Ray Theatre", theatre.getName());
     }
 
     @Test
