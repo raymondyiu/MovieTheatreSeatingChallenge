@@ -7,12 +7,12 @@ import java.time.format.DateTimeFormatter;
 
 public class Ticket {
     String title;
-    Seat seat;
+    String seatLabel;
     LocalDate eventDate;
     LocalTime eventTime;
-    public Ticket(String title, Seat seat, String eventDateStr, String eventTimeStr) {
+    public Ticket(String title, String seatLabel, String eventDateStr, String eventTimeStr) {
         this.title = title;
-        this.seat = seat;
+        this.seatLabel = seatLabel;
         this.eventDate = LocalDate.parse(eventDateStr, DateTimeFormatter.ofPattern("d-MMM-yyyy"));
         this.eventTime = LocalTime.parse(eventTimeStr);
     }

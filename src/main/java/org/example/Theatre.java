@@ -43,12 +43,15 @@ public class Theatre implements IVenue {
     public String getPostalCode(){
         return postalCode;
     }
-    public String getSeats() {
+    public String printSeats() {
         String allSeats="";
         for (int i=0; i<seats.size(); i++ ) {
             allSeats += seats.get(i).getLabel();
         }
         return allSeats;
+    }
+    public ArrayList<Seat> getSeats(){
+        return seats;
     }
 
     public void readJson(String filename) {
