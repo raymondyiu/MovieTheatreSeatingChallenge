@@ -43,11 +43,17 @@ public class Theatre implements IVenue {
         return postalCode;
     }
     public String getSeats() {
-        return null;
+        String allSeats="";
+        for (int i=0; i<seats.size(); i++ ) {
+            allSeats += seats.get(i).getLabel();
+        }
+        return allSeats;
     }
 
     public void readJson(String filename) {
         JSONParser parser = new JSONParser();
+        seats = new ArrayList<Seat>();
+
         try {
             Path path = Paths.get(
                     ClassLoader.getSystemResource(filename).toURI());
@@ -70,11 +76,12 @@ public class Theatre implements IVenue {
             for (int i = 0; i < rows.size(); i++) {
                 JSONObject row = (JSONObject) rows.get(i);
                 String rowLabel = (String)row.get("name");
-                JSONArray seats = (JSONArray) row.get("seats");
-                for (int j = 0; j < seats.size(); j++) {
-                    JSONObject seatObj = (JSONObject) seats.get(j);
-                    String seatNumber = (String) seatObj.get("name");
-                    Seat seat = new Seat(rowLabel, seatNumber);
+                JSONArray seatList = (JSONArray) row.get("seats");
+                for (int j = 0; j < seatList.size(); j++) {
+                    JSONObject seatObj = (JSONObject) seatList.get(j);
+                    //String seatNumber = (String) seatObj.get("name");
+                    Seat seat = new Seat(rowLabel, (String)seatObj.get("name"));
+                    seats.add(seat);
                 }
             }
 
@@ -86,6 +93,6 @@ public class Theatre implements IVenue {
         }
     }
     public String reserveTicket(){
-        return(seats.get(0));
+        return null;
     }
 }
