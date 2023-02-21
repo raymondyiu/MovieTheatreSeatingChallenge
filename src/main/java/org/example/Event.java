@@ -1,6 +1,7 @@
 package org.example;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 public class Event {
     private String title;
@@ -8,7 +9,8 @@ public class Event {
     private float unitPrice;
     private LocalDateTime startdate;
     private LocalDateTime validUnit;
-    public Event(String title, float unitPrice){
+    private List<Ticket> tickets;
+    public Event(String title, float unitPrice, Theatre theatre){
         this.title = title;
         this.unitPrice = unitPrice;
     }
