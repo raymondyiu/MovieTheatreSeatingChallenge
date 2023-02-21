@@ -42,6 +42,9 @@ public class Theatre implements IVenue {
     public String getPostalCode(){
         return postalCode;
     }
+    public String getSeats() {
+        return null;
+    }
 
     public void readJson(String filename) {
         JSONParser parser = new JSONParser();
