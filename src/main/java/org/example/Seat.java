@@ -1,9 +1,9 @@
 package org.example;
 
 public class Seat {
-    String row;
-    String seatNumber;
-    String label;
+    private String row;
+    private String seatNumber;
+    private String label;
     public Seat(String row, String seatNumber) {
         this.row = row;
         this.seatNumber = seatNumber;

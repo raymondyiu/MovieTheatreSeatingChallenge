@@ -27,8 +27,9 @@ public class Theatre implements IVenue {
     private ArrayList<Seat> seats;
 
 
-    public Theatre() {
+    public Theatre(String filename) {
         super();
+        readJson(filename);
     }
     public String getName(){
         return name;
@@ -90,8 +91,5 @@ public class Theatre implements IVenue {
         } catch (Exception e){
             e.printStackTrace();
         }
-    }
-    public String reserveTicket(){
-        return null;
     }
 }
