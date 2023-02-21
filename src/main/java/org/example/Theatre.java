@@ -25,12 +25,22 @@ public class Theatre implements IVenue {
     private String postalCode;
     private Event event;
     private ArrayList<String> seats;
-    public String getName(){
-        return name;
-    }
+
 
     public Theatre() {
         super();
+    }
+    public String getName(){
+        return name;
+    }
+    public String getStreet(){
+        return street;
+    }
+    public String getCity(){
+        return city;
+    }
+    public String getPostalCode(){
+        return postalCode;
     }
 
     public void readJson(String filename) {
@@ -49,6 +59,7 @@ public class Theatre implements IVenue {
             name = (String) jsonObject.get("name");
             street = (String) jsonObject.get("street");
             city = (String) jsonObject.get("city");
+            postalCode = (String) jsonObject.get("postalCode");
 
             // assign the rows and seats information
             JSONArray rows = (JSONArray) jsonObject.get("rows");

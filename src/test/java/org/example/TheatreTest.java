@@ -15,6 +15,9 @@ class TheatreTest {
         Theatre theatre = new Theatre();
         theatre.readJson("Theatre.json");
         assertEquals("Ray Theatre", theatre.getName());
+        assertEquals("5 Theatre Street", theatre.getStreet());
+        assertEquals("Kingston", theatre.getCity());
+        assertEquals("KT1 9XX", theatre.getPostalCode());
     }
 
     @Test
