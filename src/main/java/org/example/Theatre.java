@@ -72,7 +72,6 @@ public class Theatre implements IVenue {
 
             // assign the rows and seats information
             JSONArray rows = (JSONArray) jsonObject.get("rows");
-
             for (int i = 0; i < rows.size(); i++) {
                 JSONObject row = (JSONObject) rows.get(i);
                 String rowLabel = (String)row.get("name");
