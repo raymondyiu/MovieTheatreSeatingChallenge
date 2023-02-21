@@ -21,6 +21,10 @@ public class Event {
         });
     }
 
+    public int getTicketAvailable(){
+        return tickets.size();
+    }
+
     public ArrayList<Ticket> reserveTicket(int noOfTickets){
         ArrayList<Ticket> purchasedTickets = new ArrayList<Ticket>();
         if (tickets.size() > 0){
