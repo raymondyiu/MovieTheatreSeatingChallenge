@@ -24,7 +24,7 @@ public class Theatre implements IVenue {
     private String city;
     private String postalCode;
     private Event event;
-    private ArrayList<String> seats;
+    private ArrayList<Seat> seats;
 
 
     public Theatre() {
@@ -69,11 +69,12 @@ public class Theatre implements IVenue {
 
             for (int i = 0; i < rows.size(); i++) {
                 JSONObject row = (JSONObject) rows.get(i);
-                String rowStr = (String)row.get("name");
+                String rowLabel = (String)row.get("name");
                 JSONArray seats = (JSONArray) row.get("seats");
                 for (int j = 0; j < seats.size(); j++) {
-                    JSONObject seat = (JSONObject) seats.get(j);
-                    String seatNo = (String) seat.get("name");
+                    JSONObject seatObj = (JSONObject) seats.get(j);
+                    String seatNumber = (String) seatObj.get("name");
+                    Seat seat = new Seat(rowLabel, seatNumber);
                 }
             }
 
