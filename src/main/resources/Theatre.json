@@ -1,0 +1,38 @@
+{
+  "name": "Ray Theatre",
+  "street": "5 Theatre Street",
+  "city": "Kingston",
+  "postalCode": "KT1 9AB",
+  "rows": [
+    {
+      "name": "A",
+      "seats": [
+        {"name": "1"},
+        {"name": "2"},
+        {"name": "3"},
+        {"name": "4"},
+        {"name": "5"}
+      ]
+    },
+    {
+      "name": "B",
+      "seats": [
+        {"name": "1"},
+        {"name": "2"},
+        {"name": "3"},
+        {"name": "4"},
+        {"name": "5"}
+      ]
+    },
+    {
+      "name": "C",
+      "seats": [
+        {"name": "1"},
+        {"name": "2"},
+        {"name": "3"},
+        {"name": "4"},
+        {"name": "5"}
+      ]
+    }
+  ]
+}
