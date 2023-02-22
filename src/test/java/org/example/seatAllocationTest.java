@@ -41,8 +41,8 @@ class seatAllocationTest {
         csvTestCases = readCsv("testcases.csv");
         for (String[] item : csvTestCases) {
             Customer customer = new Customer(item[0], item[1]);
-            assertEquals("", customer.getName());
-            assertEquals("", customer.getEmailAddress());
+            assertEquals(item[0], customer.getName());
+            assertEquals(item[1], customer.getEmailAddress());
             int randomNumber = random.nextInt(3) + 1;
 
         }
