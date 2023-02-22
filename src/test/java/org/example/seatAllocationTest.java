@@ -10,6 +10,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -32,6 +33,7 @@ class seatAllocationTest {
 
     @Test
     void seatAllocation() {
+        Random random = new Random();
         Theatre theatre = new Theatre("Theatre.json");
         Event event = new Event("Lion King", "5-May-2023", "20:30:00", 14.0, theatre);
         assertEquals(15,event.getTicketAvailable());
@@ -40,7 +42,9 @@ class seatAllocationTest {
         for (String[] item : csvTestCases) {
             Customer customer = new Customer(item[0], item[1]);
             assertEquals(item[0], customer.getName());
-            assertEquals(Integer.valueOf(item[0]), bowling.score(item[1]));
+            assertEquals(item[1], customer.getEmailAddress());
+            int randomNumber = random.nextInt(3) + 1;
+
         }
     }
 }
