@@ -10,7 +10,9 @@ tickets for a movie theatre.
 ## Key features
 1. read theatre information from a json file.
 2. read theatre seating plan from a json file.
-3. create ticket FIFO queue to keep track the number of available tickets.
+3. read event information and cost from a json file 
+4. create ticket FIFO queue to keep track the number of available tickets. 
+5. implement a seat allocation function
 
 ## Assumptions
 - Write a program that allocates seats based on a random integer “number of seats” between 1 and 3
@@ -25,6 +27,7 @@ left to right, front to back
 1. test read json file function
 2. test theatre property assignment
 3. test event class
+4. test seat allocation logic
 
 ## Sample Test Result
 - Run seatAllocationTest
