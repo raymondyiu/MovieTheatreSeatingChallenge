@@ -30,4 +30,7 @@ left to right, front to back
 ## future thoughts
 - Person class can be extended by other group of people like student, senior
 - Other venues such hall, stadium can implement IVenue interface class
-- 
+- Movie events management system
+- online and offline payment system
+- membership system
+- Web application interface
