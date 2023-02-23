@@ -11,11 +11,11 @@ public class Ticket {
     private LocalDate eventDate;
     private LocalTime eventTime;
     private double price;
-    public Ticket(String title, String seatLabel, String eventDateStr, String eventTimeStr, double price) {
+    public Ticket(String title, String seatLabel, LocalDate date, LocalTime time, double price) {
         this.title = title;
         this.seatLabel = seatLabel;
-        this.eventDate = LocalDate.parse(eventDateStr, DateTimeFormatter.ofPattern("d-MMM-yyyy"));
-        this.eventTime = LocalTime.parse(eventTimeStr);
+        this.eventDate = date;
+        this.eventTime = time;
         this.price = price;
     }
 

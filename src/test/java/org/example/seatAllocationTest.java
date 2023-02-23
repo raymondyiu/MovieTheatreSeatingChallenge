@@ -35,7 +35,7 @@ class seatAllocationTest {
     void seatAllocation() {
         Random random = new Random();
         Theatre theatre = new Theatre("Theatre.json");
-        Event event = new Event("Lion King", "5-May-2023", "20:30:00", 14.0, theatre);
+        Event event = new Event("Event.json", theatre);
         assertEquals(theatre.printSeats(), event.printAllLabel());
         assertEquals(15,event.getTicketAvailable());
         List<String[]> csvTestCases = new ArrayList<>();

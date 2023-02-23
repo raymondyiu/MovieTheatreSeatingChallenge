@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49c6c888-c1db-46e2-96d0-662f53d8aac7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Event.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/EventTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/EventTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/seatAllocationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/seatAllocationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,10 +154,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.seatAllocationTest.seatAllocation" />
-        <item itemvalue="JUnit.TheatreTest.readJson" />
         <item itemvalue="JUnit.EventTest" />
-        <item itemvalue="JUnit.EventTest.reserveTicket" />
         <item itemvalue="JUnit.TheatreTest" />
+        <item itemvalue="JUnit.EventTest.reserveTicket" />
+        <item itemvalue="JUnit.TheatreTest.readJson" />
       </list>
     </recent_temporary>
   </component>
