@@ -8,16 +8,16 @@ public class Event {
     private final int FIRST_ELEMENT_INDEX = 0;
     private String title;
     private String Description;
-    private double unitPrice;
+    private double standardPrice;
     Theatre theatre;
     private List<Ticket> tickets;
-    public Event(String title, String eventDate, String eventTime, double unitPrice, Theatre theatre){
+    public Event(String title, String eventDate, String eventTime, double standardPrice, Theatre theatre){
         this.title = title;
-        this.unitPrice = unitPrice;
+        this.standardPrice = standardPrice;
         this.theatre = theatre;
         tickets = new ArrayList<Ticket>();
         for (Seat seat : theatre.getSeats()){
-            Ticket ticket = new Ticket( title, seat.getLabel(), eventDate, eventTime);
+            Ticket ticket = new Ticket( title, seat.getLabel(), eventDate, eventTime, standardPrice);
             tickets.add(ticket);
         }
     }

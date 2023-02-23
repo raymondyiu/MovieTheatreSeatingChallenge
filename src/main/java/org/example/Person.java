@@ -27,12 +27,17 @@ public abstract class Person {
 
     public void printTicket(ArrayList<Ticket> tickets){
         if (tickets == null) {
+
             System.out.println(String.format("%s bought 0 ticket",name));
             return;
         }
-        System.out.println(String.format("%s bought %d ticket%s", name, tickets.size(),
-                ((tickets.size()==1) ? "" : "s")
-                ));
+        double totalPrice = 0;
+        for (Ticket ticket : tickets){
+            totalPrice += ticket.getPrice();
+        }
+        System.out.println(String.format("%s bought %d ticket%s for £%.2f", name, tickets.size(),
+                ((tickets.size()==1) ? "" : "s"),
+                totalPrice));
         int count=1;
         for (Ticket ticket : tickets){
             System.out.println(String.format("%s,Ticket#%d,%s,%s,%s", name,count,ticket.getSeatLabel(),ticket.getTitle(), ticket.getEventDate()));

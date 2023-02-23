@@ -6,15 +6,17 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
 public class Ticket {
-    String title;
-    String seatLabel;
-    LocalDate eventDate;
-    LocalTime eventTime;
-    public Ticket(String title, String seatLabel, String eventDateStr, String eventTimeStr) {
+    private String title;
+    private String seatLabel;
+    private LocalDate eventDate;
+    private LocalTime eventTime;
+    private double price;
+    public Ticket(String title, String seatLabel, String eventDateStr, String eventTimeStr, double price) {
         this.title = title;
         this.seatLabel = seatLabel;
         this.eventDate = LocalDate.parse(eventDateStr, DateTimeFormatter.ofPattern("d-MMM-yyyy"));
         this.eventTime = LocalTime.parse(eventTimeStr);
+        this.price = price;
     }
 
     public String getTitle() {
@@ -31,5 +33,9 @@ public class Ticket {
 
     public LocalTime getEventTime() {
         return eventTime;
+    }
+
+    public double getPrice() {
+        return price;
     }
 }
