@@ -23,7 +23,6 @@ public class Theatre implements IVenue {
     private String street;
     private String city;
     private String postalCode;
-    private Event event;
     private ArrayList<Seat> seats;
 
 

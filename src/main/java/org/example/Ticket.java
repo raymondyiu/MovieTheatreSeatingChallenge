@@ -16,4 +16,20 @@ public class Ticket {
         this.eventDate = LocalDate.parse(eventDateStr, DateTimeFormatter.ofPattern("d-MMM-yyyy"));
         this.eventTime = LocalTime.parse(eventTimeStr);
     }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getSeatLabel() {
+        return seatLabel;
+    }
+
+    public LocalDate getEventDate() {
+        return eventDate;
+    }
+
+    public LocalTime getEventTime() {
+        return eventTime;
+    }
 }

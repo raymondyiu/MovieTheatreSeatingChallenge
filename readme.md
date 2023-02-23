@@ -5,7 +5,7 @@ This program is developed to allocate seats to customers purchasing
 tickets for a movie theatre.
 
 ## UML Diagram
-![UML Diagram of Theatre Seating Challenge](./assets/images/UML-TheatreSeatingChallenge.png)
+![UML Diagram of Theatre Seating Challenge](./assets/images/UML-MovieTheatreSeatingChallenge.drawio.png)
 
 ## Key features
 1. read theatre information from a json file.
@@ -28,3 +28,6 @@ left to right, front to back
 
 
 ## future thoughts
+- Person class can be extended by other group of people like student, senior
+- Other venues such hall, stadium can implement IVenue interface class
+- 

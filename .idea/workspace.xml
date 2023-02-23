@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49c6c888-c1db-46e2-96d0-662f53d8aac7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/images/UML-MovieTheatreSeatingChallenge.drawio.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Theatre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Theatre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/testcases.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/testcases.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/seatAllocationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/seatAllocationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +75,7 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.seatAllocationTest.seatAllocation">
-    <configuration name="BuildingsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EventTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MovieTheatreSeatingChallenge" />
       <extension name="coverage">
         <pattern>
@@ -76,7 +84,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.BuildingsTest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.EventTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -148,10 +156,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.seatAllocationTest.seatAllocation" />
-        <item itemvalue="JUnit.EventTest.reserveTicket" />
         <item itemvalue="JUnit.TheatreTest.readJson" />
+        <item itemvalue="JUnit.EventTest" />
+        <item itemvalue="JUnit.EventTest.reserveTicket" />
         <item itemvalue="JUnit.TheatreTest" />
-        <item itemvalue="JUnit.BuildingsTest" />
       </list>
     </recent_temporary>
   </component>
